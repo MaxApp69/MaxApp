@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+header {
+  background: #000;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.menu {
+  font-size: 24px;
+  cursor: pointer;
+}
+#menu-popup {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+#menu-popup a {
+  display: block;
+  margin: 5px 0;
+}
+.title {
+  font-size: 24px;
+}
+.status {
+  color: lime;
+}
+.search-container {
+  text-align: center;
+  padding: 10px;
+}
+.search-container input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+}
+main {
+  padding: 20px;
+  margin-bottom: 100px;
+}
+.app {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.icon {
+  width: 80px;
+  height: 80px;
+  background: #ddd;
+  margin-right: 20px;
+}
+.info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+.info a {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 6px;
+  background: #28a745;
+  color: white;
+  text-decoration: none;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  background: #eee;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+footer div {
+  text-align: center;
+}
+.credit {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 14px;
+}
