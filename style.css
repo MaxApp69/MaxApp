@@ -1,88 +1,118 @@
 body {
+  font-family: sans-serif;
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  background: #f4f4f4;
+  transition: 0.3s;
 }
+
+.dark {
+  background: #121212;
+  color: #fff;
+}
+
 header {
-  background: #000;
-  color: white;
+  background: #222;
+  color: #fff;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
 }
-.menu {
-  font-size: 24px;
-  cursor: pointer;
+
+header h1 {
+  margin: 0;
 }
-#menu-popup {
-  display: none;
-  position: absolute;
-  background: white;
-  border: 1px solid #ccc;
-  padding: 10px;
-}
-#menu-popup a {
-  display: block;
-  margin: 5px 0;
-}
-.title {
-  font-size: 24px;
-}
-.status {
-  color: lime;
-}
-.search-container {
-  text-align: center;
-  padding: 10px;
-}
-.search-container input {
-  width: 80%;
-  padding: 10px;
-  font-size: 16px;
-}
-main {
-  padding: 20px;
-  margin-bottom: 100px;
-}
-.app {
+
+.top-right {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  gap: 10px;
 }
-.icon {
-  width: 80px;
-  height: 80px;
-  background: #ddd;
-  margin-right: 20px;
-}
-.info h3 {
-  margin: 0;
-  font-size: 18px;
-}
-.info a {
-  display: inline-block;
-  margin-top: 5px;
+
+.top-right input {
   padding: 6px;
-  background: #28a745;
+  border-radius: 6px;
+  border: none;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu span {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  background: white;
+  color: black;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+  overflow: hidden;
+  z-index: 999;
+}
+
+.dropdown a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown.show {
+  display: block;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.app-box {
+  width: 180px;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background: #3498db;
   color: white;
+  font-size: 30px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  line-height: 60px;
+}
+
+.app-box a {
+  display: block;
+  margin-top: 10px;
+  color: #3498db;
   text-decoration: none;
 }
-footer {
-  position: fixed;
-  bottom: 0;
-  background: #eee;
+
+.ad-box {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 0;
-}
-footer div {
+  margin: 20px auto;
   text-align: center;
 }
-.credit {
+
+footer {
   text-align: center;
-  margin: 40px 0;
-  font-size: 14px;
+  padding: 15px;
+  background: #222;
+  color: white;
 }

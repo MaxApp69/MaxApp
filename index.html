@@ -2,297 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MaxApp</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MaxApp - Online App Store</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <div class="menu" onclick="toggleMenu()">☰</div>
-    <div class="title">MaxApp</div>
-    <div class="status">Online ●</div>
+    <h1>MaxApp</h1>
+    <div class="top-right">
+      <input type="text" id="searchBar" placeholder="Search app..." onkeyup="searchApps()" />
+      <button onclick="toggleTheme()">🌙</button>
+      <div class="menu">
+        <span onclick="toggleMenu()">☰</span>
+        <div id="dropdown" class="dropdown">
+          <a href="#">Privacy Policy</a>
+          <a href="#">About Us</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <div id="menu-popup">
-    <a href="about.html">About</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="terms.html">Terms</a>
-    <a href="#">Sign Up</a>
-    <a href="#" onclick="toggleTheme()">Theme</a>
-  </div>
-
-  <div class="search-container">
-    <input type="text" id="searchBox" placeholder="Search app..." oninput="searchApps()" />
-  </div>
-
-  <main id="appList">
-    
-    <section class="app" data-name="calculator">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>1. Calculator</h3>
-        <a href="#">Use Free Online</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="chatfire">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>2. ChatFire</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="netcall">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>3. NetCall</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="convertlink">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>4. ConvertLink</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="maxcall">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>5. MaxCall</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 6">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>6. Coming Soon App 6</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 7">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>7. Coming Soon App 7</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 8">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>8. Coming Soon App 8</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 9">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>9. Coming Soon App 9</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 10">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>10. Coming Soon App 10</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 11">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>11. Coming Soon App 11</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 12">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>12. Coming Soon App 12</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 13">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>13. Coming Soon App 13</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 14">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>14. Coming Soon App 14</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 15">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>15. Coming Soon App 15</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 16">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>16. Coming Soon App 16</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 17">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>17. Coming Soon App 17</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 18">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>18. Coming Soon App 18</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 19">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>19. Coming Soon App 19</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 20">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>20. Coming Soon App 20</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 21">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>21. Coming Soon App 21</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 22">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>22. Coming Soon App 22</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 23">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>23. Coming Soon App 23</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 24">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>24. Coming Soon App 24</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 25">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>25. Coming Soon App 25</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 26">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>26. Coming Soon App 26</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 27">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>27. Coming Soon App 27</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 28">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>28. Coming Soon App 28</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 29">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>29. Coming Soon App 29</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-    <section class="app" data-name="coming soon app 30">
-      <div class="icon"></div>
-      <div class="info">
-        <h3>30. Coming Soon App 30</h3>
-        <a href="#">Coming Soon...</a>
-      </div>
-    </section>
-    
-  </main>
+  <main id="appContainer"></main>
 
   <footer>
-    <div>🏠<br>Home</div>
-    <div>🔍<br>Search</div>
-    <div>📁<br>Options</div>
-    <div>📲<br>App Use</div>
-    <div>🎨<br>Theme</div>
+    <p>© Created by Pawan | Email: SmartTotalGame@gmail.com</p>
   </footer>
 
-  <div class="credit">© Created by Pawan | smarttotalgame@gmail.com</div>
-
   <script>
-    function toggleMenu() {
-      var menu = document.getElementById('menu-popup');
-      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    const apps = [
+      { name: "Calculator", link: "https://maxapp69.github.io/Calculator/" },
+      { name: "ChatFire", link: "#" },
+      { name: "NetCall", link: "#" },
+      { name: "ConvertLink", link: "#" },
+    ];
+
+    for (let i = apps.length + 1; i <= 50; i++) {
+      apps.push({ name: "Coming Soon", link: "#" });
     }
-    function toggleTheme() {
-      document.body.classList.toggle('dark-theme');
-    }
+
+    const appContainer = document.getElementById("appContainer");
+    apps.forEach((app, index) => {
+      const box = document.createElement("div");
+      box.className = "app-box";
+      box.innerHTML = `
+        <div class="icon-box">${app.name.charAt(0)}</div>
+        <h3>${app.name}</h3>
+        <a href="${app.link}" target="_blank">Use Free Online</a>
+      `;
+      appContainer.appendChild(box);
+
+      if ((index + 1) % 4 === 0) {
+        const adBox = document.createElement("div");
+        adBox.className = "ad-box";
+        adBox.innerHTML = `
+          <script type="text/javascript">
+            atOptions = {
+              'key': 'af9f1d0e36ef028f1a1b5b60c57ecc71',
+              'format': 'iframe',
+              'height': 250,
+              'width': 300,
+              'params': {}
+            };
+          </script>
+          <script type="text/javascript" src="//www.highperformanceformat.com/af9f1d0e36ef028f1a1b5b60c57ecc71/invoke.js"></script>
+        `;
+        appContainer.appendChild(adBox);
+      }
+    });
+
     function searchApps() {
-      let search = document.getElementById('searchBox').value.toLowerCase();
-      let apps = document.querySelectorAll('.app');
-      apps.forEach(app => {
-        app.style.display = app.dataset.name.includes(search) ? 'flex' : 'none';
+      let query = document.getElementById("searchBar").value.toLowerCase();
+      let boxes = document.querySelectorAll(".app-box");
+      boxes.forEach(box => {
+        let appName = box.querySelector("h3").textContent.toLowerCase();
+        box.style.display = appName.includes(query) ? "block" : "none";
       });
+    }
+
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+
+    function toggleMenu() {
+      document.getElementById("dropdown").classList.toggle("show");
     }
   </script>
 </body>
