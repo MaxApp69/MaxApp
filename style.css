@@ -1,118 +1,75 @@
+
 body {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
-  transition: 0.3s;
+  background: #f0f0f0;
 }
-
-.dark {
-  background: #121212;
-  color: #fff;
-}
-
 header {
   background: #222;
   color: #fff;
-  padding: 10px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-header h1 {
+nav ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
-
-.top-right {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+nav ul li {
+  margin-top: 5px;
 }
-
-.top-right input {
-  padding: 6px;
-  border-radius: 6px;
-  border: none;
+.theme-toggle {
+  text-align: center;
+  margin: 10px;
 }
-
-.menu {
-  position: relative;
+.search-container {
+  text-align: center;
+  padding: 10px;
 }
-
-.menu span {
-  font-size: 20px;
-  cursor: pointer;
+#search {
+  padding: 10px;
+  width: 80%;
 }
-
-.dropdown {
-  display: none;
-  position: absolute;
-  top: 25px;
-  right: 0;
-  background: white;
-  color: black;
-  border-radius: 6px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.3);
-  overflow: hidden;
-  z-index: 999;
-}
-
-.dropdown a {
-  display: block;
-  padding: 8px 12px;
-  text-decoration: none;
-  color: #333;
-}
-
-.dropdown.show {
-  display: block;
-}
-
 main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   padding: 20px;
 }
-
 .app-box {
-  width: 180px;
+  background: #fff;
+  padding: 10px;
   margin: 10px;
-  padding: 15px;
-  border-radius: 10px;
-  background: white;
-  box-shadow: 0 0 6px rgba(0,0,0,0.2);
-  text-align: center;
+  display: flex;
+  border: 1px solid #ccc;
+  align-items: center;
 }
-
 .icon-box {
-  width: 60px;
-  height: 60px;
-  background: #3498db;
-  color: white;
-  font-size: 30px;
-  border-radius: 50%;
-  margin: 0 auto 10px;
-  line-height: 60px;
+  font-size: 24px;
+  background: #ddd;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
 }
-
-.app-box a {
-  display: block;
-  margin-top: 10px;
-  color: #3498db;
-  text-decoration: none;
-}
-
 .ad-box {
-  width: 100%;
-  margin: 20px auto;
   text-align: center;
+  margin: 30px 0;
 }
-
 footer {
+  background: #222;
+  color: #fff;
+  padding: 20px;
   text-align: center;
-  padding: 15px;
+  font-size: 14px;
+}
+.dark-theme {
+  background-color: #111;
+  color: #eee;
+}
+.dark-theme .app-box {
   background: #222;
   color: white;
 }

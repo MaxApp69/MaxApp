@@ -1,91 +1,72 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MaxApp - Online App Store</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MaxApp</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>MaxApp</h1>
-    <div class="top-right">
-      <input type="text" id="searchBar" placeholder="Search app..." onkeyup="searchApps()" />
-      <button onclick="toggleTheme()">🌙</button>
-      <div class="menu">
-        <span onclick="toggleMenu()">☰</span>
-        <div id="dropdown" class="dropdown">
-          <a href="#">Privacy Policy</a>
-          <a href="#">About Us</a>
-          <a href="#">Terms & Conditions</a>
-        </div>
-      </div>
-    </div>
+    <nav>
+      <button onclick="toggleMenu()">☰</button>
+      <ul id="menu" style="display:none;">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main id="appContainer"></main>
+  <div class="theme-toggle">
+    <button onclick="toggleTheme()">Toggle Theme</button>
+  </div>
+
+  <div class="search-container">
+    <input type="text" id="search" placeholder="Search apps..." oninput="filterApps()" />
+  </div>
+
+  <main id="app-container">
+    <!-- Example 4 boxes + Ad Block -->
+    <div class="app-box"><div class="icon-box">C</div><div class="app-details"><h3>Calculator</h3><a href="https://maxapp69.github.io/Calculator/">Use Free Online</a></div></div>
+    <div class="app-box"><div class="icon-box">C</div><div class="app-details"><h3>Chatfire</h3><a href="#">Coming Soon</a></div></div>
+    <div class="app-box"><div class="icon-box">N</div><div class="app-details"><h3>NetCall</h3><a href="#">Coming Soon</a></div></div>
+    <div class="app-box"><div class="icon-box">L</div><div class="app-details"><h3>ConvertLink</h3><a href="#">Coming Soon</a></div></div>
+    <div class="ad-box">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : 'af9f1d0e36ef028f1a1b5b60c57ecc71',
+          'format' : 'iframe',
+          'height' : 250,
+          'width' : 300,
+          'params' : {}
+        };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/af9f1d0e36ef028f1a1b5b60c57ecc71/invoke.js"></script>
+    </div>
+  </main>
 
   <footer>
-    <p>© Created by Pawan | Email: SmartTotalGame@gmail.com</p>
+    <p>© Created by Pawan | <a href="mailto:smarttotalgame@gmail.com">smarttotalgame@gmail.com</a></p>
   </footer>
 
   <script>
-    const apps = [
-      { name: "Calculator", link: "https://maxapp69.github.io/Calculator/" },
-      { name: "ChatFire", link: "#" },
-      { name: "NetCall", link: "#" },
-      { name: "ConvertLink", link: "#" },
-    ];
-
-    for (let i = apps.length + 1; i <= 50; i++) {
-      apps.push({ name: "Coming Soon", link: "#" });
-    }
-
-    const appContainer = document.getElementById("appContainer");
-    apps.forEach((app, index) => {
-      const box = document.createElement("div");
-      box.className = "app-box";
-      box.innerHTML = `
-        <div class="icon-box">${app.name.charAt(0)}</div>
-        <h3>${app.name}</h3>
-        <a href="${app.link}" target="_blank">Use Free Online</a>
-      `;
-      appContainer.appendChild(box);
-
-      if ((index + 1) % 4 === 0) {
-        const adBox = document.createElement("div");
-        adBox.className = "ad-box";
-        adBox.innerHTML = `
-          <script type="text/javascript">
-            atOptions = {
-              'key': 'af9f1d0e36ef028f1a1b5b60c57ecc71',
-              'format': 'iframe',
-              'height': 250,
-              'width': 300,
-              'params': {}
-            };
-          </script>
-          <script type="text/javascript" src="//www.highperformanceformat.com/af9f1d0e36ef028f1a1b5b60c57ecc71/invoke.js"></script>
-        `;
-        appContainer.appendChild(adBox);
-      }
-    });
-
-    function searchApps() {
-      let query = document.getElementById("searchBar").value.toLowerCase();
-      let boxes = document.querySelectorAll(".app-box");
-      boxes.forEach(box => {
-        let appName = box.querySelector("h3").textContent.toLowerCase();
-        box.style.display = appName.includes(query) ? "block" : "none";
-      });
-    }
-
     function toggleTheme() {
-      document.body.classList.toggle("dark");
+      document.body.classList.toggle("dark-theme");
     }
-
     function toggleMenu() {
-      document.getElementById("dropdown").classList.toggle("show");
+      const menu = document.getElementById("menu");
+      menu.style.display = menu.style.display === "none" ? "block" : "none";
+    }
+    function filterApps() {
+      const input = document.getElementById("search").value.toLowerCase();
+      const apps = document.querySelectorAll(".app-box");
+      apps.forEach(app => {
+        const name = app.innerText.toLowerCase();
+        app.style.display = name.includes(input) ? "flex" : "none";
+      });
     }
   </script>
 </body>
