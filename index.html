@@ -1,41 +1,70 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MaxApp</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MaxApp - All in One Online App Hub">
+  <meta name="keywords" content="MaxApp, biggest calculator, chatfire, netcall, convertlink, online app, free online tools, mobile calculator, call via internet, free tools, web app hub, appstore, maxnet, free fire app, pubg web tool, whatsapp clone, max message, online messenger, google clone, online utilities, UPI call, convert videos, big calculator app, call from web, Max messaging, fast call, net call app, MaxHub, MaxPlay, MaxTools, message without sim, free online calculator, MaxApp tools, MaxChat, MaxCall">
+  <title>MaxApp - All in One Tools</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>MaxApp</h1>
     <nav>
-      <button onclick="toggleMenu()">☰</button>
-      <ul id="menu" style="display:none;">
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search apps...">
+      </div>
+      <div class="menu">
+        <button onclick="toggleTheme()">Toggle Theme</button>
+        <div class="dropdown">
+          <button class="dropbtn">☰</button>
+          <div class="dropdown-content">
+            <a href="#about">About</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#terms">Terms</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <div class="theme-toggle">
-    <button onclick="toggleTheme()">Toggle Theme</button>
-  </div>
+  <main id="appGrid">
 
-  <div class="search-container">
-    <input type="text" id="search" placeholder="Search apps..." oninput="filterApps()" />
-  </div>
-
-  <main id="app-container">
-    <!-- Example 4 boxes + Ad Block -->
-    <div class="app-box"><div class="icon-box">C</div><div class="app-details"><h3>Calculator</h3><a href="https://maxapp69.github.io/Calculator/">Use Free Online</a></div></div>
-    <div class="app-box"><div class="icon-box">C</div><div class="app-details"><h3>Chatfire</h3><a href="#">Coming Soon</a></div></div>
-    <div class="app-box"><div class="icon-box">N</div><div class="app-details"><h3>NetCall</h3><a href="#">Coming Soon</a></div></div>
-    <div class="app-box"><div class="icon-box">L</div><div class="app-details"><h3>ConvertLink</h3><a href="#">Coming Soon</a></div></div>
-    <div class="ad-box">
-      <script type="text/javascript">
+    <div class="app-box">
+      <div class="icon-box">B</div>
+      <div class="app-info">
+        <h2>1. Biggest Calculator</h2>
+        <p><a href="https://maxapp69.github.io/Calculator/" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>2. ChatFire</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">N</div>
+      <div class="app-info">
+        <h2>3. NetCall</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>4. ConvertLink</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class='ad-box'>
+      <script type='text/javascript'>
         atOptions = {
           'key' : 'af9f1d0e36ef028f1a1b5b60c57ecc71',
           'format' : 'iframe',
@@ -44,30 +73,250 @@
           'params' : {}
         };
       </script>
-      <script type="text/javascript" src="//www.highperformanceformat.com/af9f1d0e36ef028f1a1b5b60c57ecc71/invoke.js"></script>
+      <script type='text/javascript' src='//www.highperformanceformat.com/af9f1d0e36ef028f1a1b5b60c57ecc71/invoke.js'></script>
     </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>5. Coming Soon 5</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>6. Coming Soon 6</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>7. Coming Soon 7</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>8. Coming Soon 8</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>9. Coming Soon 9</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>10. Coming Soon 10</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>11. Coming Soon 11</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>12. Coming Soon 12</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>13. Coming Soon 13</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>14. Coming Soon 14</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>15. Coming Soon 15</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class='ad-box'>
+      <script type='text/javascript'>
+        atOptions = {
+          'key' : 'af9f1d0e36ef028f1a1b5b60c57ecc71',
+          'format' : 'iframe',
+          'height' : 250,
+          'width' : 300,
+          'params' : {}
+        };
+      </script>
+      <script type='text/javascript' src='//www.highperformanceformat.com/af9f1d0e36ef028f1a1b5b60c57ecc71/invoke.js'></script>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>16. Coming Soon 16</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>17. Coming Soon 17</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>18. Coming Soon 18</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>19. Coming Soon 19</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>20. Coming Soon 20</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>21. Coming Soon 21</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>22. Coming Soon 22</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>23. Coming Soon 23</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>24. Coming Soon 24</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>25. Coming Soon 25</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>26. Coming Soon 26</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>27. Coming Soon 27</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>28. Coming Soon 28</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>29. Coming Soon 29</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
+    <div class="app-box">
+      <div class="icon-box">C</div>
+      <div class="app-info">
+        <h2>30. Coming Soon 30</h2>
+        <p><a href="#" target="_blank">Use FREE online</a></p>
+      </div>
+    </div>
+    
   </main>
 
   <footer>
-    <p>© Created by Pawan | <a href="mailto:smarttotalgame@gmail.com">smarttotalgame@gmail.com</a></p>
+    <p>© 2025 Created by Pawan | <a href="mailto:pawan@example.com">pawan@example.com</a></p>
   </footer>
 
   <script>
     function toggleTheme() {
-      document.body.classList.toggle("dark-theme");
+      document.body.classList.toggle('dark-theme');
     }
-    function toggleMenu() {
-      const menu = document.getElementById("menu");
-      menu.style.display = menu.style.display === "none" ? "block" : "none";
-    }
-    function filterApps() {
-      const input = document.getElementById("search").value.toLowerCase();
-      const apps = document.querySelectorAll(".app-box");
-      apps.forEach(app => {
-        const name = app.innerText.toLowerCase();
-        app.style.display = name.includes(input) ? "flex" : "none";
+
+    const input = document.getElementById('searchInput');
+    input.addEventListener('keyup', function () {
+      const filter = input.value.toLowerCase();
+      const boxes = document.querySelectorAll('.app-box');
+      boxes.forEach(box => {
+        const title = box.querySelector('h2').textContent.toLowerCase();
+        box.style.display = title.includes(filter) ? 'flex' : 'none';
       });
-    }
+    });
   </script>
 </body>
 </html>

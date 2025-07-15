@@ -3,73 +3,80 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f0f0f0;
+  background: #f4f4f4;
+  color: #222;
+}
+.dark-theme {
+  background: #111;
+  color: #eee;
 }
 header {
-  background: #222;
+  background: #333;
   color: #fff;
-  padding: 10px 20px;
+  padding: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+nav {
+  display: flex;
+  gap: 1em;
 }
-nav ul li {
-  margin-top: 5px;
+.search-container input {
+  padding: 5px 10px;
+  font-size: 1em;
 }
-.theme-toggle {
-  text-align: center;
-  margin: 10px;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
-.search-container {
-  text-align: center;
-  padding: 10px;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
-#search {
-  padding: 10px;
-  width: 80%;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 main {
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
 }
 .app-box {
-  background: #fff;
+  width: 250px;
+  height: 120px;
+  margin: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   padding: 10px;
-  margin: 10px;
   display: flex;
-  border: 1px solid #ccc;
   align-items: center;
+  gap: 10px;
 }
 .icon-box {
-  font-size: 24px;
-  background: #ddd;
   width: 50px;
   height: 50px;
+  background: #ddd;
+  border-radius: 10px;
+  font-size: 1.5em;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-right: 15px;
+  align-items: center;
 }
 .ad-box {
+  width: 100%;
+  margin: 20px auto;
   text-align: center;
-  margin: 30px 0;
 }
 footer {
   background: #222;
-  color: #fff;
+  color: white;
   padding: 20px;
   text-align: center;
-  font-size: 14px;
-}
-.dark-theme {
-  background-color: #111;
-  color: #eee;
-}
-.dark-theme .app-box {
-  background: #222;
-  color: white;
 }
